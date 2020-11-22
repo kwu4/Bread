@@ -9,7 +9,7 @@ namespace RPGM.UI
     /// </summary>
     public class InputController : MonoBehaviour
     {
-        public float stepSize = 0.1f;
+        public float stepSize = 0.0f;
         GameModel model = Schedule.GetModel<GameModel>();
 
         public enum State

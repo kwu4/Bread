@@ -9,6 +9,7 @@ namespace RPGM.Gameplay
     /// </summary>
     public class NPCController : MonoBehaviour
     {
+        public Transform player;
         public ConversationScript[] conversations;
 
         Quest activeQuest = null;
