@@ -62,8 +62,6 @@ namespace RPGM.Gameplay
 
         void ClampHealth()
         {
-            health = Mathf.Clamp(health, 0, maxHealth);
-
             if (onHealthChangedCallback != null)
                 onHealthChangedCallback.Invoke();
         }
