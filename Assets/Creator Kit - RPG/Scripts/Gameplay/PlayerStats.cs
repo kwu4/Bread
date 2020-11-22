@@ -26,23 +26,23 @@ namespace RPGM.Gameplay
         #endregion
 
         [SerializeField]
-        private float health;
+        private int health;
         [SerializeField]
-        private float maxHealth;
+        private int maxHealth;
         [SerializeField]
-        private float maxTotalHealth;
+        private int maxTotalHealth;
 
-        public float Health { get { return health; } }
-        public float MaxHealth { get { return maxHealth; } }
-        public float MaxTotalHealth { get { return maxTotalHealth; } }
+        public int Health { get { return health; } }
+        public int MaxHealth { get { return maxHealth; } }
+        public int MaxTotalHealth { get { return maxTotalHealth; } }
 
-        public void Heal(float health)
+        public void Heal(int health)
         {
             this.health += health;
             ClampHealth();
         }
 
-        public void TakeDamage(float dmg)
+        public void TakeDamage(int dmg)
         {
             health -= dmg;
             ClampHealth();
